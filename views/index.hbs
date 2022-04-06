@@ -62,8 +62,8 @@
         </span>
       </div>
       <div class="form">
-          <input type="number" class="Enter-Gross-Amount" placeholder="Enter Gross Amount" autocomplete="off" />
-          <input type="number" class="benefits" placeholder="Enter Benefits (BONUS, ALLOWANCE)" />
+          <input id="grossAmount" type="number" class="Enter-Gross-Amount" placeholder="Enter Gross Amount" autocomplete="off" />
+          <input id="benefit" type="number" class="benefits" placeholder="Enter Benefits (BONUS, ALLOWANCE)" />
           <input type="hidden" class="nssf-rates">
             <select  id="nssf-rate" name="Select NSSF Rates">
                <option value="Select NSSF Rates">Select NSSF Rates</option>
@@ -76,7 +76,7 @@
                <option value="Yes">Yes</option>
                <option value="No">No</option>
           </select>
-          <button class="form-btn">
+          <button id="calCalcute" class="form-btn">
             <span class="form-btn-text">CALCULATE</span>
           </button>
           <p class="terms">
