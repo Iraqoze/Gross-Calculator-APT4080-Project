@@ -61,9 +61,10 @@
           Enter the gross salary Amount below to calculate your net amount
         </span>
       </div>
-      <div class="form">
-          <input id="grossAmount" type="number" class="Enter-Gross-Amount" placeholder="Enter Gross Amount" autocomplete="off" />
-          <input id="benefit" type="number" class="benefits" placeholder="Enter Benefits (BONUS, ALLOWANCE)" />
+      <form  class="form" action ="http://localhost:3000/cla" method="POST">
+                <input type="number" id="basicPay" name="basicPay" class="Enter-Gross-Amount" placeholder="Enter Basic  Salary" required>
+                <input type="number" id="allowance" name="allowance" class="benefits" placeholder="Enter Benefits (BONUS, ALLOWANCE)" required>
+
           <input type="hidden" class="nssf-rates">
             <select  id="nssf-rate" name="Select NSSF Rates">
                <option value="Select NSSF Rates">Select NSSF Rates</option>
@@ -76,9 +77,7 @@
                <option value="Yes">Yes</option>
                <option value="No">No</option>
           </select>
-          <button id="calCalcute" class="form-btn">
-            <span class="form-btn-text">CALCULATE</span>
-          </button>
+          <input id="calCalcute"  type="submit" value="CALCULATE" class="form-btn">
           <p class="terms">
             By clicking the button, you are agreeing to our
             <span class="terms-highlight">
@@ -86,6 +85,7 @@
             </span>
           </p>
         </form>
+              <h1 id="response">{{salary}}</h1>
       </div>
     </div>
   </div>

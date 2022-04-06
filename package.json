@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "handlebars": "^4.7.7",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "webdriverio": "^7.19.3"
   }
 }

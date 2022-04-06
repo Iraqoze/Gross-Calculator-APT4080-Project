@@ -1,6 +1,8 @@
 
 const express = require('express');
 const app = express();
+const { paycheckcal } = require('./paycheckcal');
+
 
 const port = process.env.PORT || 3000;
 console.log(`server listening on port ${port}`);
@@ -19,8 +21,11 @@ app.get('/', function(request, response) {
     response.render('index');
 });
 
-app.post('/index', urlEncodedParser, function(request, response) {
-  
+app.post('/cla', urlEncodedParser, function(request, response) {
+    basicSalary = parseInt(request.body.basicPay);
+    allowances = parseInt(request.body.allowance);
+    salReport = paycheckcal(basicSalary, allowances).toString()
+    response.render("index", {salary:salReport});
 });
 
 
