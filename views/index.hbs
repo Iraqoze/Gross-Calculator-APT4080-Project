@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Poppins:400, 500, 600, 700);
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <title>payslipApp</title>
+</head>
+<body>
+    <header>
+      <nav>
+      <div class="logo">Payslip<span style="color: #e5e5e5;"> Ke</span></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">iTax</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      
+    <div class="container">
+      <div class="right-section">
+        <div class="right-section-wrapper">
+          <h1 class="title">NET PAY CALCULATOR</h1>
+          <h3 class="description">
+        This net-pay calculator uses the latests PAYE, NHIF, NSSF values to calculate the net-pay and present it in a simple payslip as it could look in in a typical payroll.
+        <br><br>
+        It can be used by business/HR managers as well as accountants responsible for preparing the payroll of a company within Kenya. It makes it possible to fast calculate and get a rough idea of how much net-pay an employee will receive based on a given gross salary. It can also be used by individuals who are looking to get a feel for what they will take home at the end of the day.
+       </h3>
+      <h3><strong>Hightlights</strong></h3>
+      <ul>
+            <li>Free for small companies.</li>
+            <li>Save time on borring paperwork.</li> 
+            <li>iTax, NHIF, NSSF integration.</li>
+            <li>Employee self-service portal.</li>
+            <li>Cloud-based & mobile enabled.</li>
+      </ul>
+     
+    </div>
+  </div>
+
+  <div class="left-section">
+    <div class="left-section-wrapper">
+      <div class="disclaimer">
+
+        <span class="disclaimer-highlight">
+          Try it free! 
+        </span>
+        <span class="disclaimer-text">
+          Enter the gross salary Amount below to calculate your net amount
+        </span>
+      </div>
+      <div class="form">
+          <input type="number" class="Enter-Gross-Amount" placeholder="Enter Gross Amount" autocomplete="off" />
+          <input type="number" class="benefits" placeholder="Enter Benefits (BONUS, ALLOWANCE)" />
+          <input type="hidden" class="nssf-rates">
+            <select  id="nssf-rate" name="Select NSSF Rates">
+               <option value="Select NSSF Rates">Select NSSF Rates</option>
+               <option value="new-nssf-rate">New NSSF Rates</option>
+               <option value="old-nssf-rate">Old NSSF Rates</option>
+          </select>
+          <input type="hidden" class="nhif-rates" placeholder="Deduct NHIF?">
+            <select  id="nhif-rates" name="Deduct NHIF?">
+               <option value="Select NSSF Rates">Deduct NHIF?</option>
+               <option value="Yes">Yes</option>
+               <option value="No">No</option>
+          </select>
+          <button class="form-btn">
+            <span class="form-btn-text">CALCULATE</span>
+          </button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span class="terms-highlight">
+              Terms and Services
+            </span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">PAYSLIP KE</h1>
+    <br>
+      USIU Towers Building</br>
+      Mirema 4th Avenue</br>
+      P. O. Box 12345 - 00100</br>
+      Tel +254 20 281 0555</br>
+      Email: callcentre@payslip.co.ke</br>
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title"><strong>Quick Links</strong></h2>
+
+      <ul class="nav__ul">
+         <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+
+        <li>
+          <a href="#">Our Services</a>
+        </li>
+            
+        <li>
+          <a href="#">Location</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title"><strong>Social Media</strong></h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        
+        <li>
+          <a href="#">WhatApp</a>
+        </li>
+        <li>
+          <a href="#">Website</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>        
+        </ul>
+
+    </li>
+     <li class="nav__item nav__item--extra">
+      <h2 class="nav__title"><strong>Helping Taxpayers</strong></h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Need help?</a>
+        </li>
+        
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+          <a href="#">Knowledge Base</a>
+        </li>
+        <li>
+          <a href="#">Glossary</a>
+        </li>
+        
+        </ul>
+
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title"><strong>Legal</strong></h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+        <li>
+          <a href="#">Data Privacy Policy</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2022 © All rights reserved by Payslip Kenya Ltd.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely By APT4080 Class</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

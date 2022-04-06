@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Iraqoze/Gross-Calculator-APT4080-Project/issues"
   },
-  "homepage": "https://github.com/Iraqoze/Gross-Calculator-APT4080-Project#readme"
+  "homepage": "https://github.com/Iraqoze/Gross-Calculator-APT4080-Project#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0"
+  }
 }
