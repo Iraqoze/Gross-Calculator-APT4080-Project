@@ -7,7 +7,7 @@ let browser;
         capabilities: { browserName: 'chrome'}
     })
 
-    await browser.navigateTo('http://localhost:3000/')
+    await browser.navigateTo('https://netpay-calculator.herokuapp.com/')
 
     const nameInput = await browser.$('#basicPay')
     await nameInput.setValue('45000')
