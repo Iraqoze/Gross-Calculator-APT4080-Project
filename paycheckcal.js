@@ -1,6 +1,7 @@
+const nssf = 200;
+var nhif = 0;
 function fetchDeductions(grossIncome) {
-    const nssf = 200;
-    let nhif = 0;
+    
     let deduction = 0;
 
     if (grossIncome === 5999 || grossIncome < 5999) {
@@ -123,8 +124,14 @@ function paycheckcal(basicSalary, bonuses) {
         netPay = grossIncome - payeeAfterReflief;
     }
 
-    return "Total Deductions (NHIF & NSSF) = " + deductions + " Taxable Income = "
-        + taxableIncome + " Take Home (Net Pay) " + netPay + " Total Tax paid = " + payeeAfterReflief;
-}
+    return "Taxable Income: "+ taxableIncome + 
+    " NHIF deduction: "+nhif + 
+    " NSSF deduction "+ nssf + 
+    " Final P.A.Y.E: "+payeeAfterReflief + 
+    " Personal Relief: "+relief +
+    " Net Salary: "+netPay 
+
+
+}               
 
 module.exports = { paycheckcal, fetchDeductions };
