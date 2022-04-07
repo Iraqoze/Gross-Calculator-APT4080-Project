@@ -25,6 +25,7 @@ app.post('/cla', urlEncodedParser, function(request, response) {
     basicSalary = parseInt(request.body.basicPay);
     allowances = parseInt(request.body.allowance);
     salReport = paycheckcal(basicSalary, allowances).toString()
+    console.log(salReport);
     response.render("index", {salary:salReport});
 });
 

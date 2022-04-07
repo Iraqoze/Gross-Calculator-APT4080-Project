@@ -70,6 +70,7 @@ function fetchDeductions(grossIncome) {
         nhif = 1600;
         deduction = nssf + nhif;
     }
+
     else {
         nhif = 17000;
         deduction = nssf + nhif;
@@ -117,6 +118,12 @@ function paycheckcal(basicSalary, bonuses) {
         payeeAfterReflief = payee - relief;
         netPay = grossIncome - payeeAfterReflief;
     }
+    else if (grossIncome === 0) {
+        taxableIncome = 0;
+        payee = 0;
+        payeeAfterReflief = 0;
+        netPay = 0;
+    }
     else {
         taxableIncome = grossIncome - deductions;
         payee = taxableIncome * above47059;
@@ -124,13 +131,8 @@ function paycheckcal(basicSalary, bonuses) {
         netPay = grossIncome - payeeAfterReflief;
     }
 
-    return "Taxable Income: "+ taxableIncome + 
-    " NHIF deduction: "+nhif + 
-    " NSSF deduction "+ nssf + 
-    " Final P.A.Y.E: "+payeeAfterReflief + 
-    " Personal Relief: "+relief +
-    " Net Salary: "+netPay 
-
+    return "Total Deductions (NHIF & NSSF) = " + deductions + "  Taxable Income = "
+        + taxableIncome + " Take Home (Net Pay) " + netPay + " Total Tax paid = " + payeeAfterReflief;
 
 }               
 
