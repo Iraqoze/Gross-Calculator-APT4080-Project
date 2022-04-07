@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Run calculations.test.js
+      - name: Run calculations
         run: |
           npm install 
           npm test
