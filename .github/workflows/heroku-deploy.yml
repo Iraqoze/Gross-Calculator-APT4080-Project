@@ -42,4 +42,7 @@ jobs:
           heroku_email: "iraqoze.lionel@gmail.com"
 
       - name: Run Acceptance Testing
-        run: node acceptanceTest.js
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+              npm ci --ignore-scripts
+              node acceptanceTest.js
