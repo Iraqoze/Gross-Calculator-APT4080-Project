@@ -7,7 +7,7 @@ let browser;
         capabilities:[{
             maxInstances: 5,
             browserName: 'chrome',
-            'goog:chromeOptions': {
+            chromeOptions: {
                 args: ['headless', 'disable-gpu'],
             },
         }],
