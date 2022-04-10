@@ -117,6 +117,7 @@ font-family: "Poppins", sans-serif;
 height: 100vh;
 width: 100vw;
 background-color:whitesmoke;
+
 /*   background-repeat: no-repeat; */
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -214,6 +215,7 @@ border-radius: 6px;
 font-weight: 600;
 color: #000000;
 }
+
 #nssf-rate
 {
 width: 80%;
@@ -227,6 +229,7 @@ border-radius: 6px;
 font-weight: 600;
 color: #000000;
 }
+
 #nhif-rates
 {
 width: 80%;
@@ -240,6 +243,7 @@ border-radius: 6px;
 font-weight: 600;
 color: #000000;
 }
+
 .form input:focus {
 border: 1px solid black;
 }
@@ -279,6 +283,8 @@ color: rgb(185, 182, 211);
 color: rgb(255, 122, 122);
 font-weight: 600;
 }
+
+/*Responsivness*/
 
 @media screen and (max-width: 900px) {
 .disclaimer {
