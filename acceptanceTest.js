@@ -4,13 +4,13 @@ const assert = require('assert');
 let browser;
 ;(async () => {
     browser = await remote({
-        capabilities:[{
-            maxInstances: 5,
+        capabilities: {
             browserName: 'chrome',
             chromeOptions: {
-                args: ['headless', 'disable-gpu'],
-            },
-        }],
+                binary: '/Applications/Google Chrome Dev.app/Contents/MacOS/Google Chrome',
+                args: ['headless', 'disable-gpu']
+            }
+        }
     })
 
     await browser.navigateTo('https://netpay-calculator.herokuapp.com/')
