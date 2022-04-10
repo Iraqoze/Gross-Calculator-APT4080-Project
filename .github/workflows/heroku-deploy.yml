@@ -51,3 +51,5 @@ jobs:
         run: |
               npm ci --ignore-scripts
               node acceptanceTest.js
+        env:
+          BROWSER: chrome
