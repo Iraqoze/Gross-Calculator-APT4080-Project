@@ -5,10 +5,11 @@ let browser;
 ;(async () => {
     browser = await remote({
         capabilities: {
+            maxInstances: 1,
             browserName: 'chrome',
             chromeOptions: {
                 binary: '/Applications/Google Chrome Dev.app/Contents/MacOS/Google Chrome',
-                args: ['headless', 'disable-gpu']
+                args: ['--headless', 'disable-gpu']
             }
         }
     })
