@@ -46,10 +46,3 @@ jobs:
           heroku_app_name: "netpay-calculator"
           heroku_email: "iraqoze.lionel@gmail.com"
 
-      - name: Run Acceptance Testing
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-              npm ci --ignore-scripts
-              node acceptanceTest.js
-        env:
-          BROWSER: chrome
